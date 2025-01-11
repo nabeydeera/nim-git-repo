@@ -30,6 +30,20 @@
     </dependencies>
   <build>
     <finalName>war-test</finalName>
+    
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+                <!-- Configuration options (if any) -->
+                <configuration>
+                    <!-- Example configuration options -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+
   </build>
 
 </project>
